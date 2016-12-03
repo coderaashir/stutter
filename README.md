@@ -23,7 +23,7 @@ sdk.dir=/Users/usr/Library/Android/sdk
 * You can even run the ` ndk-build ` command through a terminal from the ` stutter-android ` project folder and build the jni files
 
 
-If the ndk-build command does not work(if you get the error "A problem occurred starting process 'command 'ndk-build.cmd''", you need to do this: 
+* If the ndk-build command does not work(if you get the error "A problem occurred starting process 'command 'ndk-build.cmd''", you need to do this: 
 
 Go to 
 
