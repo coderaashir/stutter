@@ -12,32 +12,39 @@
 -* You can even run the ` ndk-bulid ` command through a terminal from the ` stutter-android ` project folder and build the jni files
 +
 +**For OS X ** 
-+```
-+ndk.dir=/Users/usr/Library/Android/sdk/ndk-bundle
-+sdk.dir=/Users/usr/Library/Android/sdk
-+```
-+
-+* You can even run the ` ndk-build ` command through a terminal from the ` stutter-android ` project folder and build the jni files
-+
-+If the ndk-build command does not work, you need to do this: 
-+Go to 
-+```
+```
+ndk.dir=/Users/usr/Library/Android/sdk/ndk-bundle
+sdk.dir=/Users/usr/Library/Android/sdk
+```
+
+
+* You can even run the ` ndk-build ` command through a terminal from the ` stutter-android ` project folder and build the jni files
+
+
+If the ndk-build command does not work, you need to do this: 
+Go to 
+
+```
 +project -> app -> build.gradle 
-+```
-+
-+There, you will see something like this: 
-+
-+``` 
-+commandLine 'ndk-build', '-B', '-C', file('src/main/jni').absolutePath
-+``` 
-+or 
-+```
-+commandLine 'ndk-build.cmd', '-B', '-C', file('src/main/jni').absolutePath
-+``` 
-+
-+You have to change ` ndk-build ` to your ndk path in your system variable. Add a .cmd in the end only if you're on Windows.
-+So finally it will look like: 
-+
-+```
-+commandLine '/Users/usr/Library/Android/sdk/ndk-bundle/ndk-build', '-B', '-C', file('src/main/jni').absolutePath
-+``` 
+```
+
+
+There, you will see something like this: 
+
+
+``` 
+commandLine 'ndk-build', '-B', '-C', file('src/main/jni').absolutePath
+``` 
+or 
+
+```
+commandLine 'ndk-build.cmd', '-B', '-C', file('src/main/jni').absolutePath
+``` 
+
+
+You have to change ` ndk-build ` to your ndk path in your system variable. Add a .cmd in the end only if you're on Windows.
+So finally it will look like: 
+
+```
+commandLine '/Users/usr/Library/Android/sdk/ndk-bundle/ndk-build', '-B', '-C', file('src/main/jni').absolutePath
+``` 
